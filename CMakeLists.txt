@@ -7,7 +7,7 @@ option(BUILD_EXAMPLES "Build examples" OFF)
 
 project(print) #название проекта
 
-add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp) #Создание статической библиотеки
+add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp) #Добавление статической библиотеки,используя указанные исходные файлы
 
 target_include_directories(print PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
