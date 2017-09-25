@@ -1,13 +1,13 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.0) # Проверка версии CMake
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 11) #Установка переменных со списком исходных файлов
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(BUILD_EXAMPLES "Build examples" OFF)
 
-project(print)
+project(print) #название проекта
 
-add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp)
+add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp) #Создание статической библиотеки
 
 target_include_directories(print PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -18,8 +18,8 @@ if(BUILD_EXAMPLES)
   file(GLOB EXAMPLE_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/examples/*.cpp")
   foreach(EXAMPLE_SOURCE ${EXAMPLE_SOURCES})
     get_filename_component(EXAMPLE_NAME ${EXAMPLE_SOURCE} NAME_WE)
-    add_executable(${EXAMPLE_NAME} ${EXAMPLE_SOURCE})
-    target_link_libraries(${EXAMPLE_NAME} print)
+    add_executable(${EXAMPLE_NAME} ${EXAMPLE_SOURCE}) #Создает исполняемый файл с именем EXAMPLE_NAME из исходника EXAMPLE_SOURCE.cpp
+    target_link_libraries(${EXAMPLE_NAME} print) #Линковка команды с библиотекой
     install(TARGETS ${EXAMPLE_NAME}
       RUNTIME DESTINATION bin
     )
