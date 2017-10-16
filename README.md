@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/poljkee2010/lab07.svg?branch=master)](https://travis-ci.org/poljkee2010/lab07)
 
 ## Laboratory work V
@@ -116,3 +117,6 @@ $ gistup -m "lab${LAB_NUMBER}"
 ```
 Copyright (c) 2017 Братья Вершинины
 ```
+=======
+# lab07
+>>>>>>> 8a2537755533041d39144845bca4d234223c165b
