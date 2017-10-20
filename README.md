@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/poljkee2010/lab07.svg?branch=master)](https://travis-ci.org/poljkee2010/lab07)
+[![Build Status](https://travis-ci.org/poljkee2010/lab08.svg?branch=master)](https://travis-ci.org/poljkee2010/lab08)
 
 ## Laboratory work V
 
@@ -11,7 +11,7 @@ $ open https://travis-ci.org
 ## Tasks
 
 - [X] 1. Авторизоваться на сервисе **Travis CI** с использованием **GitHub** аккаунта
-- [X] 2. Создать публичный репозиторий с названием **lab07** на сервисе **GitHub**
+- [X] 2. Создать публичный репозиторий с названием **lab08** на сервисе **GitHub**
 - [X] 3. Ознакомиться со ссылками учебного материала
 - [X] 4. Включить интеграцию сервиса **Travis CI** с созданным репозиторием
 - [X] 5. Получить токен для **Travis CLI** с правами **repo** и **user**
@@ -28,10 +28,10 @@ $ export GITHUB_TOKEN=<полученный_токен>
 ```
 
 ```ShellSession
-$ git clone https://github.com/${GITHUB_USERNAME}/lab04 lab07
-$ cd lab07
+$ git clone https://github.com/${GITHUB_USERNAME}/lab04 lab08
+$ cd lab08
 $ git remote remove origin
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab07
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab08
 ```
 
 ```ShellSession
@@ -117,5 +117,5 @@ $ gistup -m "lab${LAB_NUMBER}"
 Copyright (c) 2017 Братья Вершинины
 ```
 =======
-# lab07
+# lab08
 >>>>>>> 8a2537755533041d39144845bca4d234223c165b
