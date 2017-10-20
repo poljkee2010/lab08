@@ -1,6 +1,8 @@
 /*!
 	\file
 	\brief Заголовочный файл print.hpp
+	\author Alexander Ananikyan
+	\date 20 October 2017
 	Декларация
 */
 #include <string>
